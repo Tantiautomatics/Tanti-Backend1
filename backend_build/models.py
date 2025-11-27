@@ -1,5 +1,5 @@
 from sqlalchemy import Column, Integer, String, Float, Boolean, DateTime, ForeignKey, Text, JSON
-from database import Base
+from backend_build.database import Base
 from datetime import datetime
 from typing import Optional
 
@@ -252,4 +252,5 @@ class MilestoneGrid(Base):
     
     created_at = Column(DateTime, default=datetime.utcnow)
     updated_at = Column(DateTime, default=datetime.utcnow)
+
 
