@@ -13,9 +13,9 @@ import bcrypt
 import jwt
 import logging
 
-from database import get_db, init_db, engine
+from backend_build.database import get_db, init_db, engine
 from sqlalchemy import text, func, or_
-from models import User, Project, Milestone as MilestoneModel, ScopeItem as ScopeItemModel, MilestoneGrid, Notification, ActivityLog, MaterialRequest, PurchaseOrder, Issue, DesignDeliverable, Document
+from backend_build.models import User, Project, Milestone as MilestoneModel, ScopeItem as ScopeItemModel, MilestoneGrid, Notification, ActivityLog, MaterialRequest, PurchaseOrder, Issue, DesignDeliverable, Document
 from sqlalchemy.orm import Session
 
 # Configure logging
